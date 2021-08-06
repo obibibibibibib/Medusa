@@ -14,9 +14,7 @@ Get the latest version by clicking on the [Releases](https://github.com/noxito/M
 ## Build
 1. [Get](https://gradle.org/next-steps/?version=2.7&format=bin) and [install](https://docs.gradle.org/current/userguide/installation.html) gradle.
 2. Download and clone repo to a new folder
-3. Open command prompt and type: gradlew build
-
-3.1. If you are on Linux, open your terminal and type: ./gradlew build
+3. Open command prompt and type: gradlew build / If you are in Linux, type: ./gradlew build
 4. Find the build in builds/libs in the direcotry you cloned this to
 
 # Client
