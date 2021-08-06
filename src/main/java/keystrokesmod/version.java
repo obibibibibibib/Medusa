@@ -73,7 +73,7 @@ public class version {
 
         URL url = null;
         try {
-            url = new URL("https://raw.githubusercontent.com/Kopamed/Raven-bPLUS/main/src/main/resources/assets/keystrokes/version");
+            url = new URL("https://raw.githubusercontent.com/noxito/Medusa/main/src/main/resources/assets/keystrokes/version");
         } catch (MalformedURLException e) {
             e.printStackTrace();
             return "";
