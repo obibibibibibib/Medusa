@@ -9,7 +9,7 @@ Medusa is built on top of [Raven b+](https://github.com/Kopamed/Raven-bPLUS). Th
 
 # Installation
 ## User
-Get the latest version by clicking on the [Releases] page, download and paste it inside your Forge mods folder.
+Get the latest version by clicking on the [Releases](https://github.com/noxito/Medusa/releases) page, download and paste it inside your Forge mods folder.
 
 ## Build
 1. [Get](https://gradle.org/next-steps/?version=2.7&format=bin) and [install](https://docs.gradle.org/current/userguide/installation.html) gradle.
