@@ -63,19 +63,19 @@ public class ClickGui extends GuiScreen {
       int quarterScreenHeight = this.height / 4;
       int halfScreenWidth = this.width / 2;
       int w_c = 30 - this.aT.getValueInt(0, 30, 3);
-      this.drawCenteredString(this.fontRendererObj, "M", halfScreenWidth + 1 - w_c, quarterScreenHeight - 25, ay.rainbowDraw(2L, 1500L));
+      this.drawCenteredString(this.fontRendererObj, "M", halfScreenWidth - w_c, quarterScreenHeight - 25, ay.rainbowDraw(2L, 1500L));
       this.drawCenteredString(this.fontRendererObj, "e", halfScreenWidth - w_c, quarterScreenHeight - 15, ay.rainbowDraw(2L, 1200L));
       this.drawCenteredString(this.fontRendererObj, "d", halfScreenWidth - w_c, quarterScreenHeight - 5, ay.rainbowDraw(2L, 900L));
       this.drawCenteredString(this.fontRendererObj, "u", halfScreenWidth - w_c, quarterScreenHeight + 5, ay.rainbowDraw(2L, 600L));
       this.drawCenteredString(this.fontRendererObj, "s", halfScreenWidth - w_c, quarterScreenHeight + 15, ay.rainbowDraw(2L, 300L));
-      this.drawCenteredString(this.fontRendererObj, "a", halfScreenWidth + 1 + w_c, quarterScreenHeight + 30, ay.rainbowDraw(2L, 0L));
+      this.drawCenteredString(this.fontRendererObj, "a", halfScreenWidth - w_c, quarterScreenHeight + 25, ay.rainbowDraw(2L, 0L));
 
       //task bar
-      Gui.drawRect(0, this.height, this.width, this.height  - 6 - this.fontRendererObj.FONT_HEIGHT, 0xff3c3f41);
+      Gui.drawRect(0, this.height, this.width, this.height  - 6 - this.fontRendererObj.FONT_HEIGHT, 0xFF000000);
       //line
       Gui.drawRect(0, this.height - 6 - this.fontRendererObj.FONT_HEIGHT, this.width, this.height  - 7 - this.fontRendererObj.FONT_HEIGHT, 0xff909599);
       // info text
-      mc.fontRendererObj.drawString("by Kopamed, Blowsy and vitorwille", 4, this.height - 3 - mc.fontRendererObj.FONT_HEIGHT, ay.rainbowDraw(2L, 420L));
+      mc.fontRendererObj.drawString("by Blowsy, Kopamed and vitorwille", 4, this.height - 3 - mc.fontRendererObj.FONT_HEIGHT, ay.rainbowDraw(2L, 420L));
 
       //date
       mc.fontRendererObj.drawString(ay.getDate(), this.width-3-this.fontRendererObj.getStringWidth(ay.getDate()), this.height - 3 - this.fontRendererObj.FONT_HEIGHT, ay.rainbowDraw(2L, 420L));
@@ -95,7 +95,7 @@ public class ClickGui extends GuiScreen {
          String veryCoolBetaUser = mc.thePlayer.getName() + " is a very cool beta user of version " + version.getCurrentVersion().replaceAll("-", ".");
          mc.fontRendererObj.drawString(veryCoolBetaUser, halfScreenWidth - this.fontRendererObj.getStringWidth(veryCoolBetaUser) / 2, this.height - this.fontRendererObj.FONT_HEIGHT - 3, ay.rainbowDraw(2L, 420L));
       } else {
-         mc.fontRendererObj.drawString("beta", halfScreenWidth - this.fontRendererObj.getStringWidth("Updated") / 2, this.height - this.fontRendererObj.FONT_HEIGHT - 3, ay.rainbowDraw(2L, 420L));
+         mc.fontRendererObj.drawString(" beta", halfScreenWidth - this.fontRendererObj.getStringWidth("Updated") / 2, this.height - this.fontRendererObj.FONT_HEIGHT - 3, ay.rainbowDraw(2L, 420L));
       }
 
       /* old code
